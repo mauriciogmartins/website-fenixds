@@ -1,31 +1,37 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="docs/icons/icone-web.png" type="image/x-icon" />
     <link rel="stylesheet" href="pages/css/global.css">
+    <link rel="stylesheet" type="text/css" href="pages/css/home.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="includes/upload/jquery-1.4.2.min.js"></script>
+    <script src="pages/js/script.js"></script>
     <title>Fênix D.S</title>
 </head>
 
 <body>
     <header>
-        <div class="logo"></div>
+        <div>
+            <img alt="Logo" src="docs/imgs/logo-web.png">
+            <h1>Revelando o mundo digital</h1>
+        </div>
 
         <div>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Instituição</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Contato</a>
+                <button onclick="carregarHTML('pages/html/home.html')">Home</button>
+                <button onclick="carregarHTML('pages/html/instituicao.html')">Instituição</button>
+                <button onclick="carregarHTML('pages/html/portfolio.html')">Portfólio</button>
+                <button onclick="carregarHTML('pages/html/contato.html')">Contato</button>
             </nav>
         </div>
     </header>
 
     <section>
-        <div>
-
-        </div>
+        <div id="conteudo"></div>
     </section>
 </body>
 

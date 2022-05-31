@@ -20,15 +20,28 @@ header {
     background-color: rgba(51, 50, 61, 1);
 }
 
-.logo {
-    background-image: url('../../docs/imgs/logo-web.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    width: 150px;
-    height: 49px;
-
+header>div {
     margin-left: 150px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header>div>img {
+    width: 155px;
+    height: 49px;
+}
+
+header>div>h1 {
+    all: unset;
+    margin-top: 8px;
+
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
 header>div>nav {
@@ -39,7 +52,7 @@ header>div>nav {
     margin-right: 150px;
 }
 
-header>div>nav>a {
+header>div>nav>button {
     all: unset;
     cursor: pointer;
     padding: 6px 10px;
@@ -53,7 +66,9 @@ header>div>nav>a {
     color: #FFFFFF;
 }
 
-header>div>nav>a:hover {
+header>div>nav>button:hover {
+    transition: 0.2s;
+
     color: #F39035;
 
     background-image: url('../../docs/imgs/fundo-botao-menu-web.png');
@@ -62,6 +77,6 @@ header>div>nav>a:hover {
     background-size: 100% 5%;
 }
 
-header>div>nav>a:active {
+header>div>nav>button:active {
     color: #FFFFFF;
 }
