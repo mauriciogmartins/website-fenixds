@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('../../docs/imgs/fundo-web.png');
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+
+    background-color: rgba(51, 50, 61, 1);
+}
+
+.logo {
+    background-image: url('../../docs/imgs/logo-web.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 49px;
+
+    margin-left: 150px;
+}
+
+header>div>nav {
+    display: flex;
+    width: 440px;
+    justify-content: space-around;
+
+    margin-right: 150px;
+}
+
+header>div>nav>a {
+    all: unset;
+    cursor: pointer;
+    padding: 6px 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+header>div>nav>a:hover {
+    color: #F39035;
+
+    background-image: url('../../docs/imgs/fundo-botao-menu-web.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 5%;
+}
+
+header>div>nav>a:active {
+    color: #FFFFFF;
+}
