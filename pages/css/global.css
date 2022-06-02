@@ -11,56 +11,69 @@ body {
 }
 
 header {
+    height: 120px;
+    background-color: rgba(51, 50, 61, 1);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    height: 100px;
-
-    background-color: rgba(51, 50, 61, 1);
 }
 
-header>div {
+.header-logo {
     margin-left: 150px;
 
     display: flex;
     flex-direction: column;
 }
 
-header>div>img {
+.header-logo>img {
     width: 155px;
     height: 49px;
 }
 
-header>div>h1 {
+.header-logo>h1 {
     all: unset;
-    margin-top: 8px;
-
-    font-size: 10px;
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 38px;
     line-height: 14px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    letter-spacing: 0.9px;
 
     color: #FFFFFF;
+    cursor: default;
+}
+
+.header-logo>h2 {
+    all: unset;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-left: 2px;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.7px;
+
+    color: #FFFFFF;
+    cursor: default;
 }
 
 header>div>nav {
     display: flex;
-    width: 440px;
+    width: 300px;
     justify-content: space-around;
 
     margin-right: 150px;
 }
+
 
 header>div>nav>button {
     all: unset;
     cursor: pointer;
     padding: 6px 10px;
 
-    font-weight: 400;
+    font-weight: 100;
     font-size: 16px;
     line-height: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.9px;
     text-transform: uppercase;
 
     color: #FFFFFF;
@@ -79,4 +92,50 @@ header>div>nav>button:hover {
 
 header>div>nav>button:active {
     color: #FFFFFF;
+}
+
+footer {
+    height: 35px;
+    background-color: rgba(51, 50, 61, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>span {
+    all: unset;
+    padding: 5px;
+
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.7px;
+    font-weight: 100;
+
+    color: #FFFFFF;
+}
+
+footer>span>a {
+    all: unset;
+
+    padding: 5px;
+
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.7px;
+    font-weight: 100;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+footer>div>a {
+    all: unset;
+    cursor: pointer;
+}
+
+footer>div>a>img {
+    width: 25px;
+    height: 25px;
 }
