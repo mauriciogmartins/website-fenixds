@@ -10,18 +10,16 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
-header {
+.header {
     height: 120px;
     background-color: rgba(51, 50, 61, 1);
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .header-logo {
-    margin-left: 150px;
-
     display: flex;
     flex-direction: column;
 }
@@ -56,16 +54,16 @@ header {
     cursor: default;
 }
 
-header>div>nav {
+.header-menu {
     display: flex;
-    width: 300px;
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
     justify-content: space-around;
-
-    margin-right: 150px;
 }
 
 
-header>div>nav>button {
+.header-menu nav>button {
     all: unset;
     cursor: pointer;
     padding: 6px 10px;
@@ -79,7 +77,7 @@ header>div>nav>button {
     color: #FFFFFF;
 }
 
-header>div>nav>button:hover {
+.header-menu nav>button:hover {
     transition: 0.2s;
 
     color: #F39035;
@@ -87,15 +85,16 @@ header>div>nav>button:hover {
     background-image: url('../../docs/imgs/fundo-botao-menu-web.png');
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100% 5%;
+    background-size: 100% 1px;
 }
 
-header>div>nav>button:active {
+.header-menu nav>button:active {
     color: #FFFFFF;
 }
 
-footer {
+.footer {
     height: 35px;
+    width: 100%;
     background-color: rgba(51, 50, 61, 1);
 
     display: flex;
@@ -103,7 +102,7 @@ footer {
     align-items: center;
 }
 
-footer>span {
+.footer span {
     all: unset;
     padding: 5px;
 
@@ -115,7 +114,7 @@ footer>span {
     color: #FFFFFF;
 }
 
-footer>span>a {
+.footer span>a {
     all: unset;
 
     padding: 5px;
@@ -130,12 +129,18 @@ footer>span>a {
     cursor: pointer;
 }
 
-footer>div>a {
+.footer div>a {
     all: unset;
     cursor: pointer;
 }
 
-footer>div>a>img {
+.footer div>a>img {
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 300px) {
+    .footer div {
+        display: none;
+    }
 }

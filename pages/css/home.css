@@ -1,69 +1,49 @@
 .conteudo {
-    margin: 15px 150px;
+    margin: 15px 10%;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-}
-
-.conteudo>div {
-    text-align: center;
 
     font-family: 'Jost', sans-serif;
 }
 
-.container {
-    margin: 15px;
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-}
 
-.container-slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-
-    cursor: pointer;
-}
-
-.container-slides input {
+.slides-conteudo input {
     display: none;
 }
 
-.container-slides-itens {
+.slides-conteudo-itens {
     width: 25%;
     position: relative;
 }
 
-.container-slides-itens img {
-    width: 600px;
+.slides-conteudo-itens img {
+    width: 100%;
     height: 100%;
 }
 
-.navegacao-manual {
+.slides-conteudo-navegacao-manual {
     position: absolute;
-    width: 600px;
-    margin-top: -40px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.navegacao-manual-btn {
+.slides-conteudo-navegacao-manual-btn {
     border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.navegacao-manual-btn:not(:last-child) {
+.slides-conteudo-navegacao-manual-btn:not(:last-child) {
     margin-right: 20px;
 }
 
-.navegacao-manual-btn:hover {
+.slides-conteudo-navegacao-manual-btn:hover {
     transition: 0.3s;
     background-color: #ffffff;
 }
@@ -88,28 +68,129 @@
     transition: 0.8s;
 }
 
-.navegacao-auto {
-    position: absolute;
-    width: 600px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
+@media (min-width: 600px),
+(max-width: 600px) {
+    .conteudo header h1 {
+        margin-top: 15px;
+
+        font-weight: 700px;
+        font-size: 26px;
+        line-height: 14px;
+        text-align: center;
+
+
+        color: #000000;
+    }
+
+    .slides {
+        margin: 15px;
+        min-width: 400px;
+        max-width: 600px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .slides-conteudo {
+        width: 400%;
+        height: 400px;
+        display: flex;
+
+        cursor: pointer;
+    }
+
+    .slides-conteudo-itens img {
+        min-width: 400px;
+        max-width: 600px;
+    }
+
+    .slides-conteudo-navegacao-manual {
+        min-width: 400px;
+        max-width: 600px;
+        margin-top: -40px;
+    }
 }
 
-.navegacao-auto div:not(:last-child) {
-    margin-right: 20px;
+@media (max-width: 400px) {
+    .conteudo header h1 {
+        margin-top: 10px;
+
+        font-weight: 400pxs;
+        font-size: 20px;
+        line-height: 14px;
+
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .slides {
+        margin: 15px;
+        min-width: 300px;
+        max-width: 400px;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .slides-conteudo {
+        width: 400%;
+        height: 250px;
+        display: flex;
+
+        cursor: pointer;
+    }
+
+    .slides-conteudo-itens img {
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    .slides-conteudo-navegacao-manual {
+        min-width: 300px;
+        max-width: 400px;
+        margin-top: -30px;
+    }
 }
 
-.navegacao-auto div {
-    border: 4px solid #20a6ff;
-    padding: 3px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+@media (max-width: 300px) {
+    .conteudo header h1 {
+        margin-top: 5px;
 
-#radio-slides-1:checked~.navegacao-auto .navegacao-auto-btn1,
-#radio-slides-2:checked~.navegacao-auto .navegacao-auto-btn2,
-#radio-slides-3:checked~.navegacao-auto .navegacao-auto-btn3,
-#radio-slides-4:checked~.navegacao-auto .navegacao-auto-btn4 {
-    background-color: #ffffff;
+        font-weight: 100pxs;
+        font-size: 20px;
+        line-height: 14px;
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .slides {
+        margin: 15px;
+        min-width: 120px;
+        max-width: 300px;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .slides-conteudo {
+        width: 400%;
+        height: 250px;
+        display: flex;
+
+        cursor: pointer;
+    }
+
+    .slides-conteudo-itens img {
+        min-width: 120px;
+        max-width: 300px;
+        height: 250px;
+    }
+
+    .slides-conteudo-navegacao-manual {
+        min-width: 120px;
+        max-width: 300px;
+        margin-top: -25px;
+    }
 }

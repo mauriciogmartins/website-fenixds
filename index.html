@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header-logo">
             <img alt="Logo" src="docs/imgs/logo-web.png">
             <h1>Fênix D.S</h1>
             <h2>Revelando o mundo digital</h2>
         </div>
 
-        <div>
+        <div class="header-menu">
             <nav>
                 <button onclick="home()">Home</button>
                 <button onclick="carregarHTML('pages/html/portfolio.html')">Portfólio</button>
@@ -34,57 +34,66 @@
 
     <section id="home">
         <div class="conteudo">
-            <div>
+            <header>
                 <h1>
-                    <span>Conheça algumas de nossas ferramentas ou</span><br>
+                    <span>Conheça algumas de nossas ferramentas ou</span><br><br>
                     <span>solicite um aplicativo personalizado.</span>
                 </h1>
-            </div>
-            <div class="container">
-                <div class="container-slides" onclick="carregarHTML('pages/html/portfolio.html')">
+            </header>
+
+            <section class="slides">
+                <div class="slides-conteudo">
                     <input type="radio" name="radios-slides" id="radio-slides-1" checked>
                     <input type="radio" name="radios-slides" id="radio-slides-2">
                     <input type="radio" name="radios-slides" id="radio-slides-3">
                     <input type="radio" name="radios-slides" id="radio-slides-4">
 
 
-                    <div class="container-slides-itens inicio">
+                    <div class="slides-conteudo-itens inicio" onclick="carregarHTML('pages/html/portfolio.html')">
                         <img src="docs/portfolio/sitec-card.png" alt="Sitec">
                     </div>
 
-                    <div class="container-slides-itens">
+                    <div class="slides-conteudo-itens" onclick="carregarHTML('pages/html/portfolio.html')">
                         <img src="docs/portfolio/sitec.png" alt="Sitec">
                     </div>
 
-                    <div class="container-slides-itens">
+                    <div class="slides-conteudo-itens" onclick="carregarHTML('pages/html/portfolio.html')">
                         <img src="docs/portfolio/saged-card.png" alt="Saged">
                     </div>
 
-                    <div class="container-slides-itens">
+                    <div class="slides-conteudo-itens" onclick="carregarHTML('pages/html/portfolio.html')">
                         <img src="docs/portfolio/saged.png" alt="Saged">
                     </div>
 
-                    <div class="navegacao-auto">
-                        <div class="navegacao-auto-btn1"></div>
-                        <div class="navegacao-auto-btn2"></div>
-                        <div class="navegacao-auto-btn3"></div>
-                        <div class="navegacao-auto-btn4"></div>
+                    <div class="slides-conteudo-navegacao-auto">
+                        <div class="slides-conteudo-navegacao-auto-btn1"></div>
+                        <div class="slides-conteudo-navegacao-auto-btn2"></div>
+                        <div class="slides-conteudo-navegacao-auto-btn3"></div>
+                        <div class="slides-conteudo-navegacao-auto-btn4"></div>
                     </div>
                 </div>
 
-                <div class="navegacao-manual">
-                    <label for="radio-slides-1" class="navegacao-manual-btn"></label>
-                    <label for="radio-slides-2" class="navegacao-manual-btn"></label>
-                    <label for="radio-slides-3" class="navegacao-manual-btn"></label>
-                    <label for="radio-slides-4" class="navegacao-manual-btn"></label>
+                <div class="slides-conteudo-navegacao-manual">
+                    <label for="radio-slides-1" class="slides-conteudo-navegacao-manual-btn"
+                        onclick="focarImagem(1)"></label>
+                    <label for="radio-slides-2" class="slides-conteudo-navegacao-manual-btn"
+                        onclick="focarImagem(2)"></label>
+                    <label for="radio-slides-3" class="slides-conteudo-navegacao-manual-btn"
+                        onclick="focarImagem(3)"></label>
+                    <label for="radio-slides-4" class="slides-conteudo-navegacao-manual-btn"
+                        onclick="focarImagem(4)"></label>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
-    <footer>
-        <span>Desenvolvido por Fênix D.S - @2022 | <a href="https://goo.gl/maps/kpzscQxKdwEJ5CS87">Sombrio-SC</a> | (48)
-            99906.6699</span>
+    <footer class="footer">
+        <span>Desenvolvido por Fênix D.S - @2022 | <a href="https://goo.gl/maps/kpzscQxKdwEJ5CS87">Sombrio-SC</a> |
+            <a
+                href="https://api.whatsapp.com/send?phone=5548999066699&text=Ol%C3%A1%20de%20qual%20solu%C3%A7%C3%A3o%20seu%20neg%C3%B3cio%20voc%C3%AA%20esta%20precisando%3F">
+                (48) 99906.6699
+            </a>
+        </span>
         <div>
             <a
                 href="https://api.whatsapp.com/send?phone=5548999066699&text=Ol%C3%A1%20de%20qual%20solu%C3%A7%C3%A3o%20seu%20neg%C3%B3cio%20voc%C3%AA%20esta%20precisando%3F">
