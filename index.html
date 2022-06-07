@@ -3,112 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="docs/icons/icone-web.png" type="image/x-icon" />
-    <link rel="stylesheet" href="pages/css/global.css">
-    <link rel="stylesheet" type="text/css" href="pages/css/home.css">
-    <link rel="stylesheet" type="text/css" href="pages/css/portfolio.css">
-    <link rel="stylesheet" type="text/css" href="pages/css/contato.css">
+    <link rel="shortcut icon" href="docs/imgs/global/icone-web.png" type="image/x-icon" />
+    <link rel="stylesheet" href="docs/pages/css/global.css">
+    <link rel="stylesheet" href="docs/pages/css/home.css">
+    <link rel="stylesheet" href="docs/pages/css/portfolio.css">
+    <link rel="stylesheet" href="docs/pages/css/contato.css">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="includes/upload/jquery-1.4.2.min.js"></script>
-    <script src="pages/js/script.js"></script>
+    <script src="docs/pages/js/script.js"></script>
     <title>Fênix D.S</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-logo">
-            <img alt="Logo" src="docs/imgs/logo-web.png">
-            <h1>Fênix D.S</h1>
-            <h2>Revelando o mundo digital</h2>
-        </div>
-
-        <div class="header-menu">
-            <nav>
-                <button onclick="home()">Home</button>
-                <button onclick="carregarHTML('pages/html/portfolio.html')">Portfólio</button>
-                <button onclick="carregarHTML('pages/html/contato.html')">Contato</button>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home">
-        <div class="conteudo">
-            <header>
-                <h1>
-                    <span>Conheça algumas de nossas ferramentas ou</span><br><br>
-                    <span>solicite um aplicativo personalizado.</span>
-                </h1>
-            </header>
-
-            <section class="slides">
-                <div class="slides-conteudo">
-                    <input type="radio" name="radios-slides" id="radio-slides-1" checked>
-                    <input type="radio" name="radios-slides" id="radio-slides-2">
-                    <input type="radio" name="radios-slides" id="radio-slides-3">
-                    <input type="radio" name="radios-slides" id="radio-slides-4">
-
-
-                    <div class="slides-conteudo-itens inicio" onclick="carregarHTML('pages/html/portfolio.html')">
-                        <img src="docs/portfolio/sitec-card.png" alt="Sitec">
-                    </div>
-
-                    <div class="slides-conteudo-itens" onclick="carregarHTML('pages/html/portfolio.html')">
-                        <img src="docs/portfolio/sitec.png" alt="Sitec">
-                    </div>
-
-                    <div class="slides-conteudo-itens" onclick="carregarHTML('pages/html/portfolio.html')">
-                        <img src="docs/portfolio/saged-card.png" alt="Saged">
-                    </div>
-
-                    <div class="slides-conteudo-itens" onclick="carregarHTML('pages/html/portfolio.html')">
-                        <img src="docs/portfolio/saged.png" alt="Saged">
-                    </div>
-
-                    <div class="slides-conteudo-navegacao-auto">
-                        <div class="slides-conteudo-navegacao-auto-btn1"></div>
-                        <div class="slides-conteudo-navegacao-auto-btn2"></div>
-                        <div class="slides-conteudo-navegacao-auto-btn3"></div>
-                        <div class="slides-conteudo-navegacao-auto-btn4"></div>
-                    </div>
+    <main class="main">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img alt="Logo" src="docs/imgs/global/logo-web.png">
+                        <h1>Fênix D.S</h1>
+                        <h2>Revelando o mundo digital</h2>
+                    </a>
                 </div>
 
-                <div class="slides-conteudo-navegacao-manual">
-                    <label for="radio-slides-1" class="slides-conteudo-navegacao-manual-btn"
-                        onclick="focarImagem(1)"></label>
-                    <label for="radio-slides-2" class="slides-conteudo-navegacao-manual-btn"
-                        onclick="focarImagem(2)"></label>
-                    <label for="radio-slides-3" class="slides-conteudo-navegacao-manual-btn"
-                        onclick="focarImagem(3)"></label>
-                    <label for="radio-slides-4" class="slides-conteudo-navegacao-manual-btn"
-                        onclick="focarImagem(4)"></label>
+                <div class="header-menu">
+                    <nav>
+                        <button onclick="home()">Home</button>
+                        <button onclick="carregarHTML('docs/pages/html/portfolio.html')">Portfólio</button>
+                        <button onclick="carregarHTML('docs/pages/html/contato.html')">Contato</button>
+                    </nav>
                 </div>
-            </section>
-        </div>
-    </section>
+            </div>
+        </header>
 
-    <footer class="footer">
-        <span>Desenvolvido por Fênix D.S - @2022 | <a href="https://goo.gl/maps/kpzscQxKdwEJ5CS87">Sombrio-SC</a> |
-            <a
-                href="https://api.whatsapp.com/send?phone=5548999066699&text=Ol%C3%A1%20de%20qual%20solu%C3%A7%C3%A3o%20seu%20neg%C3%B3cio%20voc%C3%AA%20esta%20precisando%3F">
-                (48) 99906.6699
-            </a>
-        </span>
-        <div>
-            <a
-                href="https://api.whatsapp.com/send?phone=5548999066699&text=Ol%C3%A1%20de%20qual%20solu%C3%A7%C3%A3o%20seu%20neg%C3%B3cio%20voc%C3%AA%20esta%20precisando%3F">
-                <img src="docs/icons/whatsapp-logo-icone.png" alt="Whatsapp">
-            </a>
+        <section id="conteudo">
+            <div class="conteudo-home">
+                <header class="conteudo-home-titulo">
+                    <h1>
+                        <span>Conheça algumas de nossas ferramentas ou</span><br>
+                        <span>solicite um aplicativo personalizado.</span>
+                    </h1>
+                </header>
 
-            <a href="https://www.facebook.com/fenixds.br">
-                <img alt="GitHub" src="../../docs/icons/facebook-logo-icone-.png">
-            </a>
+                <main class="conteudo-home-slidesshow">
+                    <div class="slideshow">
+                        <div class="slideshow-itens" id="slideshow-itens-inicio"
+                            onclick="carregarHTML('docs/pages/html/portfolio.html')">
+                            <img src="docs/imgs/slides/sitec-card.png" alt="Sitec">
+                        </div>
 
-            <a href="https://www.instagram.com/fenixds.br/">
-                <img alt="Linkedin" src="../../docs/icons/instagram-logo-icone.png">
-            </a>
-        </div>
-    </footer>
+                        <div class="slideshow-itens" onclick="carregarHTML('docs/pages/html/portfolio.html')">
+                            <img src="docs/imgs/slides/sitec.png" alt="Sitec">
+                        </div>
+
+                        <div class="slideshow-itens" onclick="carregarHTML('docs/pages/html/portfolio.html')">
+                            <img src="docs/imgs/slides/saged-card.png" alt="Saged">
+                        </div>
+
+                        <div class="slideshow-itens" onclick="carregarHTML('docs/pages/html/portfolio.html')">
+                            <img src="docs/imgs/slides/saged.png" alt="Saged">
+                        </div>
+                    </div>
+                    <div class="slideshow-controles">
+                        <input type="radio" onclick="navegacaoManual(1)" name="radios-slides" id="radio-slides-1"
+                            checked>
+                        <input type="radio" onclick="navegacaoManual(2)" name="radios-slides" id="radio-slides-2">
+                        <input type="radio" onclick="navegacaoManual(3)" name="radios-slides" id="radio-slides-3">
+                        <input type="radio" onclick="navegacaoManual(4)" name="radios-slides" id="radio-slides-4">
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-caracteres">
+                <span><span id="empresa">Desenvolvido por Fênix D.S - @2022 |</span>
+                    <a href="https://goo.gl/maps/kpzscQxKdwEJ5CS87"> Sombrio-SC |</a>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5548999066699&text=Ol%C3%A1%20de%20qual%20solu%C3%A7%C3%A3o%20seu%20neg%C3%B3cio%20voc%C3%AA%20esta%20precisando%3F">
+                        (48) 99906.6699
+                    </a>
+                </span>
+            </div>
+            <div>
+                <a
+                    href="https://api.whatsapp.com/send?phone=5548999066699&text=Ol%C3%A1%20de%20qual%20solu%C3%A7%C3%A3o%20seu%20neg%C3%B3cio%20voc%C3%AA%20esta%20precisando%3F">
+                    <img src="docs/imgs/global/whatsapp-logo-icone.png" alt="Whatsapp">
+                </a>
+
+                <a href="https://www.facebook.com/fenixds.br">
+                    <img alt="Facebook" src="docs/imgs/global/facebook-logo-icone-.png">
+                </a>
+
+                <a href="https://www.instagram.com/fenixds.br/">
+                    <img alt="Instagram" src="docs/imgs/global/instagram-logo-icone.png">
+                </a>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>

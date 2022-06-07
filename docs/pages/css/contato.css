@@ -1,0 +1,62 @@
+.contato {
+    min-width: 200px;
+    max-width: 800px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-header {
+    margin: 30px;
+}
+
+.contato-header h1 {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+
+    color: #33323D;
+
+    max-height: 100%;
+
+    text-align: center;
+}
+
+.contato-header p {
+    margin-top: 28px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    color: #33323D;
+
+    mix-blend-mode: normal;
+
+    max-height: 100%;
+
+    text-align: center;
+}
+
+.contato-main nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-main a {
+    all: unset;
+    cursor: pointer;
+
+    min-width: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.contato-main img {
+    min-width: 20px;
+    max-width: 300px;
+    width: 100%;
+}
