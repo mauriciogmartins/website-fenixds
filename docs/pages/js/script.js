@@ -30,6 +30,7 @@ function navegacaoManual(index) {
          transition: 0.8s;`;
 
     count = index - 1;
+    controleManual = true;
 }
 
 function home() {
